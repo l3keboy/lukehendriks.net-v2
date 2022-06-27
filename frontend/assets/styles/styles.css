@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: gotham-rounded-bold;
+    src: url('/assets/fonts/{*}.otf') format("opentype");
+    font-weight: bold;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow: overlay;
+}
