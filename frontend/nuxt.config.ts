@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from 'nuxt'
+import { defineNuxtConfig } from 'nuxt/config'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -6,9 +6,10 @@ export default defineNuxtConfig({
       "@/assets/styles/styles.css",
       "@/assets/styles/scrollbar.css",
     ],
-    build: {
-      postcss: {
-        postcssOptions: require("./postcss.config.js"),
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
       },
     },
 })
