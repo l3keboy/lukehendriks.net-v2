@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: "jit",
-  purge: [
+  content: [
     "./assets/**/*.css",
     "./components/*.{vue,js}",
     "./components/**/*.{vue,js}",
@@ -14,11 +14,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primary": "#4D7ED1",
-        "secondary": "#4D4DD1",
+        primary: "#4D7ED1",
+        secondary: "#4D4DD1",
         "navy-blue": "#152238",
         "off-white": "#F5F5F5",
-        "error": "#D14D4D",
+        error: "#D14D4D",
       },
       fontFamily: {
         "nunito-black": ["nunito-black", "sans-serif"],
@@ -38,13 +38,13 @@ module.exports = {
         "nunito-semibold": ["nunito-semibold", "sans-serif"],
         "nunito-semibolditalic": ["nunito-semibolditalic", "sans-serif"],
 
-        "h1": ["nunito-bold", "sans-serif"],
-        "h2": ["nunito-bold", "sans-serif"],
-        "h3": ["nunito-regular", "sans-serif"],
-        "h4": ["nunito-bold", "sans-serif"],
-        "h5": ["nunito-bold", "sans-serif"],
-        "h6": ["nunito-bold", "sans-serif"],
-        "p": ["nunito-light", "sans-serif"],
+        h1: ["nunito-bold", "sans-serif"],
+        h2: ["nunito-bold", "sans-serif"],
+        h3: ["nunito-regular", "sans-serif"],
+        h4: ["nunito-bold", "sans-serif"],
+        h5: ["nunito-bold", "sans-serif"],
+        h6: ["nunito-bold", "sans-serif"],
+        p: ["nunito-light", "sans-serif"],
       },
       fontSize: {
         "h1-mobile": "42px",
@@ -70,10 +70,10 @@ module.exports = {
         "p-laptop": "20px",
       },
       screens: {
-        "sm": "640px",
-        "md": "768px",
-        "lg": "1050px",
-        "xl": "1280px",
+        sm: "640px",
+        md: "768px",
+        lg: "1050px",
+        xl: "1280px",
         "2xl": "1536px",
       },
       maxWidth: {
